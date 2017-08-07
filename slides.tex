@@ -5,9 +5,13 @@
 % \usepackage{pgfpages}
 % \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
 
-\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of,multimedia,hyperref}
+\usepackage{amsmath,amssymb,enumerate,epsfig,bbm,calc,color,ifthen,capt-of,multimedia,hyperref,graphicx}
+
+%\usepackage[labelformat=empty]{caption} %remove caption 
+\newcommand{\source}[1]{\caption*{Source: {#1}} } %add source of images
 
 \usetheme{Berlin}
+%\usetheme[compress]{Berlin}
 \usecolortheme{sustech}
 
 \title{Reinventing the Wheel: Publishing High-quality Slides}
@@ -34,6 +38,7 @@
 
 \section[Outline]{}
 \begin{frame}{Outline}
+%\begin{frame}[allowframebreaks]{Outline} %allow outline to split
   \tableofcontents
 \end{frame}
 
